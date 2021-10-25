@@ -1,0 +1,22 @@
+{
+    "dev": {
+        "app_function": "app.handler",
+        "aws_region": "us-east-1",
+        "profile_name": "default",
+        "project_name": "punto-1-c-d",
+        "keep_warm": false,
+        "apigateway_enabled": false,
+        "runtime": "python3.9",
+        "s3_bucket": "zappa-y287eme35",
+        "events": [{
+            "function": "app.handler",
+            "event_source": {
+                "arn": "arn:aws:s3:::parcial21",
+                "events": [
+                    "s3:ObjectCreated:*"
+                ]
+            }
+        }]
+    }
+    
+}
