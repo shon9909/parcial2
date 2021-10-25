@@ -1,0 +1,12 @@
+{
+    "dev": {
+        "app_function": "app.handler",
+        "aws_region": "us-east-1",
+        "profile_name": "default",
+        "project_name": "parcial",
+        "keep_warm": false,
+        "apigateway_enabled": false,
+        "runtime": "python3.9",
+        "s3_bucket": "zappa-nsxvejg6v"
+    }
+}
